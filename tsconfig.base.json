@@ -1,0 +1,14 @@
+
+// Example: tsconfig.base.json
+
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "rootDir": "src"
+  },
+  "include": ["src"]
+}

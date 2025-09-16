@@ -1,0 +1,11 @@
+
+// Browser web: tsconfig.web.json
+
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES6",
+    "outDir": "dist/web"
+  }
+}
