@@ -19,12 +19,8 @@ export function fibonacci(n: number): number {
   }
 
   // Base cases: Fibonacci(0) = 0, Fibonacci(1) = 1
-  if (n === 0) {
-    return 0;
-  }
-  if (n === 1) {
-    return 1;
-  }
+  
+  
 
   // Recursive case: Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)
   return fibonacci(n - 1) + fibonacci(n - 2);

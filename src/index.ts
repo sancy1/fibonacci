@@ -1,4 +1,3 @@
-
 // src/index.ts
 
 // Import all the modules
@@ -7,7 +6,7 @@ import { Person } from "./Person";
 import { calculateTotal, processList } from "./lists";
 import { fetchData, simulateAsyncOperation, fetchWeatherData, fetchRandomUser } from "./asyncFunctions";
 import { handleExceptions, validateInput } from "./exceptions";
-import { factorial, fibonacci } from "./recursion";
+import { fibonacci, generateFibonacciSequence } from "./fibonacci"; // Changed import
 
 /**
  * Helper function to safely get error message from unknown error type
@@ -31,7 +30,7 @@ async function main(): Promise<void> {
   // Demonstrate Recursion - Basic Requirement
   console.log("1. RECURSION DEMONSTRATION:");
   console.log("Fibonacci of 10: " + fibonacci(10));
-  console.log("Factorial of 5: " + factorial(5) + "\n");
+  console.log("Fibonacci sequence up to 10: " + generateFibonacciSequence(10).join(", ") + "\n");
 
   // Demonstrate Classes - Basic Requirement
   console.log("2. CLASSES DEMONSTRATION:");

@@ -18,10 +18,10 @@
  * - Otherwise → return fibonacci(n-1) + fibonacci(n-2)
  */
 export function fibonacci(n: number): number {
-  if (n <= 1) {
-    return n;
+  if (n <= 1) {          // Base case: if n is 0 or 1,
+    return n;            // return n directly (fib(0)=0, fib(1)=1)
   }
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  return fibonacci(n - 1) + fibonacci(n - 2); // Recursive case: sum of previous two Fibonacci numbers
 }
 
 /**
@@ -33,9 +33,10 @@ export function fibonacci(n: number): number {
  * generateFibonacciSequence(5) → [0, 1, 1, 2, 3, 5]
  */
 export function generateFibonacciSequence(n: number): number[] {
-  const sequence: number[] = [];
-  for (let i = 0; i <= n; i++) {
-    sequence.push(fibonacci(i));
+  const sequence: number[] = [];     // Initialize an empty array to store the sequence
+  for (let i = 0; i <= n; i++) {    // Loop from 0 up to and including the input number n
+    sequence.push(fibonacci(i));     // Calculate the Fibonacci number for each index and add to array
   }
-  return sequence;
+  return sequence;                   // Return the complete sequence array
 }
+
